@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART ELECTRONICS</title>
+    <link rel="stylesheet" href="syt.css">
+</head>
+<body style="background-color: lightblue;">
+    <header>
+        <h1>PHONE SHOP</h1>
+        <p>Contact us at: <a href="mailto:example@example.com">smartelectronics@gmail.com</a>
+            <a href="mobile no">+91-3333999988</a></p>
+        
+       
+        <style>
+            .grid-container {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 15px; 
+            }
+          </style>
+          
+          <div class="grid-container">
+            <div>HOME</div>
+            <div>SERVICE</div>
+            <div>CONTACT</div>
+           <div>ABOUT US</div>
+          </div>
+
+    </header>
+
+    <main id="products">
+        <section class="product">
+            <img src="https://m.media-amazon.com/images/I/31Q14qzdoZL._SY445_SX342_QL70_FMwebp_.jpg" alt="IPHONE 15">
+            <h2>Iphone 15</h2>
+            <p>70,999.00</p>
+            <button onclick="addToCart('Iphone 15', 70,999.00)">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg" alt="SUMSUNG S24 ULTRA">
+            <h2>SUMSNUG S24 ULTRA</h2>
+            <p>1,59999.00</p>
+            <button onclick="addToCart('SAMSUNG S24 ULTRA', 1,59999.00)">Add to Cart</button>
+        </section>
+        <section class="product">
+        <img src="https://m.media-amazon.com/images/I/51dzm2O8ZWL._SX300_SY300_QL70_FMwebp_.jpg" alt="OPPO F27 PRO">
+        <h3>OPPO F27 PRO</h3>
+        <p>29,999.00</p>
+        <button onclick="addToCart('OPPO F27 PRO', 29,999.00)">Add to Cart</button>
+    </section>
+    <section class="product">
+        <img src="https://m.media-amazon.com/images/I/71JwBmU9nFL._SX679_.jpg" alt="VIVO T2 PRO">
+        <h4>VIVO T2 PRO</h4>
+        <p>23,999.00</p>
+        <button onclick="addToCart('VIVO T2 PRO', 23,999.00)">Add to Cart</button>
+    </section>
+    </main>
+     
+    <aside id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+        </ul>
+        <p id="cart-total">Total: $0.00</p>
+    </aside>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
